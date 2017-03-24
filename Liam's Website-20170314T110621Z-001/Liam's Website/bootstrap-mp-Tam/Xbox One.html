@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap Project LC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="css/mystyle.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!--navigation-->
+	<div class="navbar navbar-inverse navbar-static-top">
+		<div class="container">
+			<a href="index.html" class="navbar-brand">Liam Craddock</a>
+			<!--collapsale menu trigger-->
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<div class="collapse navbar-collapse navHeaderCollapse">
+				<ul class="nav navbar-nav navbar-right">
+                                  
+                                  
+                     <!--dropdown menus START-->
+                    <li class="dropdown">
+						<a href="Xbox.html" class="dropdown-toggle" data-toggle="dropdown">Xbox <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+						  <li><a href="Xbox One.html">Xbox One</a></li>
+                          <li><a href ="Xbox 360.html">Xbox 360</a></li>
+                          <li><a href="Backward Compatibility.html">Backward Compatibility</a></li>
+						</ul>
+                    </li>
+                    
+                    <li class="dropdown">
+						<a href="Playstation.html" class="dropdown-toggle" data-toggle="dropdown">Playstation <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+                             <li><a href="PS4.html">PS4</a></li>
+				             <li><a href="PS4.html">PS3</a></li>
+					     </ul> 
+                    </li>
+                    
+					<li class="dropdown">
+						<a href="PC.html" class="dropdown-toggle" data-toggle="dropdown">PC <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+					         <li><a href="PC games.html">PC games</a></li>
+						</ul>
+					</li>
+					<!--Dropdown menus END-->
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+
+<!--jumbotron-->
+	<div class="container">
+		<div class="jumbotron">
+			<h1>Xbox One!</h1>
+			<p>Here you can see the latest releases to Xbox including all the games that are exclusive to this console</p>
+			
+		</div>
+	</div>
+	
+<!--grid system-->
+	<div class="container">
+		<div class="row">
+		<!--Article 1-->
+			<div class="col-md-4">
+				<div class="thumbnail">
+				  	<img src="assets/halo%205.jpg" alt="Article One" style="height:250px;">
+				  	<div class="caption">
+						<h3>Halo 5 Guardians</h3>
+						<p>This is the latest addition to the Halo franchise, which is exclusive to Xbox One and also includes two new multiplayer modes. This is available to buy for £49.99</p>
+						
+				  	</div>
+				</div>
+			</div>
+		<!--Article 2-->
+			<div class="col-md-4">
+				<div class="thumbnail">
+				  	<img src="assets/fifa%2017.jpg" alt="Article One" style="height:250px;">
+				  	<div class="caption">
+						<h3>Fifa 17</h3>
+						<p>Here you can play as your faviorate football team and complete seasons or cup matches and also play people online aswell. This is available to buy for £44.99</p>
+						
+				  	</div>
+				</div>
+			</div>
+		<!--Article 3-->
+			<div class="col-md-4">
+				<div class="thumbnail">
+				  	<img src="assets/tomb%20raider.jpg" alt="Article One" style="height:250px;">
+				  	<div class="caption">
+						<h3>Rise of the Tomb Raider</h3>
+						<p>This the latest Tomb Raider game which goes back to Lara Crofts first adventure. In this game you have to use all your survival skills to complete the game as well as having loads of hidden places to explore this is available to buy for £14.99</p>
+						
+				  	</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<!--footer-->
+	<div class="navbar navbar-default navbar-fixed-bottom">
+		<div class="container">
+			<p class="navbar-text">Site Built by Liam Craddock</p>
+			<a class="navbar-btn btn btn-success pull-right" href="#contact" data-toggle="modal">Contact Us</a>
+		</div>
+	</div>
+	
+<!--modal-->
+	<div class="modal fade" id="contact" role="dialog">
+       <div class="modal-dialog">
+           <div class="modal-content">
+               <!--form START-->
+               <form class="form-horizontal">
+               <!--HEADER-->
+               <div class="modal-header">
+             <h4>Contact Liam</h4>   
+              </div>
+               <!--BODY-->
+               <div class="modal-body">
+                 
+                   <div class="form-group"><!--name-->
+                      <label for="contact-name" class="col-lg-2 control-label">Name</label>
+                       <div class="col-lg-10">
+                         <input type="text" class="form-control" id="contact-name" placeholder="Full Name">
+                       </div>
+                   </div>
+                   <div class="form-group"><!--email-->
+                      <label for="contact-email" class="col-lg-2 control-label">Email</label>
+                       <div class="col-lg-10">
+                         <input type="email" class="form-control" id="contact-email" placeholder="you@example.com">
+                       </div>
+                   </div>
+                   <div class="form-group"><!--message-->
+                      <label for="contact-msg" class="col-lg-2 control-label">Message</label>
+                       <div class="col-lg-10">
+                         <textarea class="form-control" rows="8"></textarea>
+                       </div>
+                   </div>
+                   
+                   <!--FOOTER-->
+                   <div class="modal-footer">
+                       <button class="btn btn-success" type="submit">Submit</button>
+                      <a class="btn btn-danger" data-dismiss="modal">Close</a>
+                   </div>
+               </div>
+               </form>
+               <!--form END-->
+           </div> 
+       </div>    
+    </div>      
+               <!--form END-->
+           </div> 
+       </div>    
+    </div>    
+			<!--Modal Form End-->	
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
